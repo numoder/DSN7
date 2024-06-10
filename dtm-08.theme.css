@@ -1,9 +1,128 @@
 /**
-* @name DTM-08
-* @author 11pixels
-* @version 2.0.1
-* @invite vUN9sNW
-* @description A skeuomorphic/glossy theme
-* @source https://github.com/XYZenix/XYZenixThemes/tree/master/DTM-08-V2
+* @name DiscordNetwork 7
+* @author numoder
+* @version 1
+* @description MSN-like theme for discord.
+* @source https://github.com/numoder/DSN7
 */
-@import url(https://xyzenix.github.io/XYZenixThemes/DTM-08-V2/dtm-08-v2.css);
+
+:root{
+    --tahoma-font: Tahoma, sans-serif;
+
+    --font-size: 11px;
+}
+
+/* universal rules */
+
+.button__581d0:not(.lookBlank_a5b4ca), .theme-light .role_d81130{
+  min-width: 75px;
+  min-height: 23px;
+}
+
+
+/* ---light(luna) interface--- */
+
+/* buttons */
+.theme-light .button__581d0:not(.lookBlank_a5b4ca), .theme-light .role_d81130{
+    font-family: var(--tahoma-font) !important;
+    -webkit-font-smoothing: antialiased;
+    font-size: var(--font-size);
+    box-sizing: border-box;
+    border: 1px solid #003c74;
+    background: linear-gradient(180deg,#fff,#ecebe5 86%,#d8d0c4);
+    box-shadow: none;
+    border-radius: 3px;
+    color: #222;
+    padding: 0px 12px !important;
+}
+
+.theme-light .roleNameOverflow__27401 {
+  color: #222;
+}
+
+.theme-light .button__581d0:not(.lookBlank_a5b4ca):not(:disabled).active, .theme-light .button__581d0:not(.lookBlank_a5b4ca):not(:disabled):active,
+.theme-light .role_d81130:not(:disabled):active {
+    box-shadow: none;
+    background: linear-gradient(180deg,#cdcac3,#e3e3db 8%,#e5e5de 94%,#f2f2f1);
+}
+
+.theme-light .button__581d0:not(.lookBlank_a5b4ca):not(.lookBlank_a5b4ca):not(:disabled):hover,
+.theme-light .role_d81130:not(:disabled):hover {
+	box-shadow: inset -1px 1px #fff0cf,inset 1px 2px #fdd889,inset -2px 2px #fbc761,inset 2px -2px #e5a01a;
+}
+
+.theme-light .button__581d0:not(.lookBlank_a5b4ca):not(.lookBlank_a5b4ca).focused, .theme-light .button__581d0:not(.lookBlank_a5b4ca):not(.lookBlank_a5b4ca):focus,
+.theme-light .role_d81130:not(:disabled):focus {
+  box-shadow: inset -1px 1px #cee7ff,inset 1px 2px #98b8ea,inset -2px 2px #bcd4f6,inset 1px -1px #89ade4,inset 2px -2px #89ade4;
+}
+
+.theme-light .button__581d0:not(.lookBlank_a5b4ca):not(.lookBlank_a5b4ca).focused, .theme-light .button__581d0:not(.lookBlank_a5b4ca):not(.lookBlank_a5b4ca):focus,
+.theme-light .role_d81130:focus  {
+  outline: 1px dotted #000;
+  outline-offset: -4px;
+}
+
+/* msn 7 buttons / colorbrand */
+.theme-light .button__581d0:not(.lookBlank_a5b4ca):not(.lookBlank_a5b4ca).colorBrand__27d57{
+  background: linear-gradient(0deg, rgba(220,228,252,1) 0%, rgba(234,245,250,1) 50%, rgba(255,255,255,1) 100%);
+  border-image: linear-gradient(#a8c0d8, white) 1;
+  box-shadow: inset 0px 0px 1px 1.75px #1f3d53, inset 0px 1px 0px 2px white;
+}
+
+.theme-light .button__581d0:not(.lookBlank_a5b4ca):not(.lookBlank_a5b4ca).colorBrand__27d57:hover {
+	box-shadow: inset 0px 0px 1px 1.75px #1f3d53, inset 0px 1px 0px 2px rgb(0, 0, 0), inset -1px 4px #fff0cf,inset 1px 4px #fdd889,inset -4px 4px #fbc761,inset 3px -4px #e5a01a;
+}
+
+.theme-light .button__581d0:not(.lookBlank_a5b4ca):not(.lookBlank_a5b4ca).colorBrand__27d57:active{
+  box-shadow: inset 0px 0px 1px 1.75px #1f3d53, inset 0px 1px 0px 2px rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(118,136,185,1) 0%, rgba(218,232,237,1) 50%, rgba(231,231,231,1) 100%);
+  border-radius: 4px !important;
+}
+
+/* checkbox */
+.container__2ed72{
+  max-width: 13px;
+  max-height: 13px;
+}
+
+
+.theme-light .container__2ed72{
+  border: 1px solid #1d5281;
+  background: linear-gradient(135deg,#dcdcd7,#fff);
+  border-radius: 0px;
+  }
+  
+  .theme-light .container__2ed72:not(disabled):hover {
+    box-shadow: inset -2px -2px #f8b636,inset 2px 2px #fedf9c;
+    }
+    
+    .theme-light .container__2ed72:not(disabled):active {
+      box-shadow: none;
+      background: linear-gradient(135deg,#b2b2a9, #e1dfd0);
+}
+
+.theme-light .slider__41d94 > rect,
+.theme-light:not(.checked__36fdc) .slider__41d94 {
+ opacity: 0;
+ fill: transparent !important;
+}
+
+.theme-light .checked__36fdc .slider__41d94 {
+  position: relative !important;
+  left: 0px !important;
+  top: 0px;
+  opacity: 1;
+  background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -0.5 11 11' shape-rendering='crispEdges'%3E%3Cpath stroke='%2322a122' d='M8 2h1M7 3h2M2 4h1m3 0h3M2 5h2m1 0h3M2 6h5M3 7h3M4 8h1'/%3E%3C/svg%3E");
+  width: 11px;
+  height: 11px;
+}
+
+
+
+/* ---dark(zune) interface--- */
+
+/* ---context menus--- */
+
+/* ---icons--- */
+
+/* ---popout profile / profile--- */
