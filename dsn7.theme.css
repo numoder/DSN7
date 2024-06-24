@@ -55,15 +55,13 @@ mask: none !important;
 border-radius: 0px !important;
 }
 
-.mainContent_a08117[aria-expanded="false"] .icon_a08117 {
-background: url();
-width: 9px;
-height: 9px;
+.mainContent_a08117 .icon_a08117{
+width: 9px !important;
+height: 9px !important;
 }
-.mainContent_a08117[aria-expanded="true"] .icon_a08117 {
-background: url();
-width: 9px;
-height: 9px;
+
+[d="M5.3 9.3a1 1 0 0 1 1.4 0l5.3 5.29 5.3-5.3a1 1 0 1 1 1.4 1.42l-6 6a1 1 0 0 1-1.4 0l-6-6a1 1 0 0 1 0-1.42Z"] {
+fill: transparent;
 }
 
 .sizeSmall_dd4f85:not(.colorBrand_dd4f85)   {
@@ -109,7 +107,7 @@ color: #fff !important;
 .body_b9fccc > div::-webkit-scrollbar, .userPopoutOverlayBackground_c69a7b > .scroller_d2b491::-webkit-scrollbar, 
 .userPopoutOverlayBackground_c69a7b .scrollerBase_c49869::-webkit-scrollbar,
 .userPanelInner_c69a7b > div::-webkit-scrollbar,
-.menu_d90b3d > div::-webkit-scrollbar, .modal_b545d5::-webkit-scrollbar, .modalContent_b545d5::-webkit-scrollbar {
+.menu_d90b3d > div::-webkit-scrollbar, .modal_b545d5::-webkit-scrollbar, .modalContent_b545d5::-webkit-scrollbar, .contentWrapper_af5dbb > div > div > .scrollerBase_c49869::-webkit-scrollbar, .searchBar_c6ee36 > div::-webkit-scrollbar {
 width: 0px !important;
 padding-right: 17px !important;
 }
@@ -212,12 +210,12 @@ border-radius: 0px;
 }
 
 .theme-light .container_cebd1c:not(disabled):hover {
-  box-shadow: inset -2px -2px #f8b636,inset 2px 2px #fedf9c;
-  }
+box-shadow: inset -2px -2px #f8b636,inset 2px 2px #fedf9c;
+}
   
-  .theme-light .container_cebd1c:not(disabled):active {
-    box-shadow: none;
-    background: linear-gradient(135deg,#b2b2a9, #e1dfd0);
+.theme-light .container_cebd1c:not(disabled):active {
+box-shadow: none;
+background: linear-gradient(135deg,#b2b2a9, #e1dfd0);
 }
 
 .theme-light .slider_cebd1c > rect,
@@ -602,8 +600,93 @@ margin-bottom: 49px;
 background: transparent;
 }
 
+.theme-light .mainContent_a08117[aria-expanded="true"] .icon_a08117 {
+background: url(https://raw.githubusercontent.com/numoder/DSN7/master/assets/luna/minus.png);
+}
+
+.theme-light .mainContent_a08117[aria-expanded="false"] .icon_a08117 {
+background: url(https://raw.githubusercontent.com/numoder/DSN7/master/assets/luna/plus.png);
+rotate: 90deg;
+}
+
+.wrapper_d8bfb3{
+margin-right: 0px;
+}
+
+.link_d8bfb3:before{
+content: "---" !important;
+height: 24px;
+width: 10px;
+color: transparent;
+font-size: 11px;
+border-bottom: 1px dotted grey;
+border-left: 1px dotted grey;
+top: -14px !important;
+}
+
+.link_d8bfb3{
+padding: 1px 8px;
+}
+
+.linkTop_d8bfb3:has([d="M10.99 3.16A1 1 0 1 0 9 2.84L8.15 8H4a1 1 0 0 0 0 2h3.82l-.67 4H3a1 1 0 1 0 0 2h3.82l-.8 4.84a1 1 0 0 0 1.97.32L8.85 16h4.97l-.8 4.84a1 1 0 0 0 1.97.32l.86-5.16H20a1 1 0 1 0 0-2h-3.82l.67-4H21a1 1 0 1 0 0-2h-3.82l.8-4.84a1 1 0 1 0-1.97-.32L15.15 8h-4.97l.8-4.84ZM14.15 14l.67-4H9.85l-.67 4h4.97Z"]) .name_d8bfb3::before, .linkTop_d8bfb3:has([d="M16 4h.5v-.5a2.5 2.5 0 0 1 5 0V4h.5a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm4-.5V4h-2v-.5a1 1 0 1 1 2 0Z"]) .name_d8bfb3::before {
+content: "#";
+}
+.linkTop_d8bfb3:has([d="M16 4h.5v-.5a2.5 2.5 0 0 1 5 0V4h.5a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm4-.5V4h-2v-.5a1 1 0 1 1 2 0Z"]) .name_d8bfb3::after {
+content: " (private)";
+} 
+
+.modeMuted_d8bfb3 .name_d8bfb3::after{
+content: " (muted)";
+}
+
+.modeMuted_d8bfb3:has([d="M16 4h.5v-.5a2.5 2.5 0 0 1 5 0V4h.5a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1h-6a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1Zm4-.5V4h-2v-.5a1 1 0 1 1 2 0Z"]) .name_d8bfb3::after{
+content: " (muted & private)";
+}
+
+.linkTop_d8bfb3 .icon_d8bfb3{
+width: 0px;
+}
+
+.theme-light .name_d8bfb3:hover{
+text-decoration: underline;
+}
+
+.theme-light .name_d8bfb3:active{
+color: white !important;
+background: rgb(49, 106, 197);
+outline: 1px dotted #FF9933;
+outline-offset: -1px;
+}
+
+.theme-light .modeSelected_d8bfb3 .name_d8bfb3 {
+background: rgb(49, 106, 197);
+color: white;
+text-decoration: underline;
+}
+
+.theme-light .unreadImportant_d8bfb3{
+border-radius: 1px;
+rotate: 45deg;
+width: 5px;
+height: 5px;
+left: -3px;
+border: 1px solid green;
+background: linear-gradient(135deg, rgba(52,180,0,1) 0%, rgba(234,255,227,1) 100%); 
+z-index: 2;
+}
+
+.numberBadge_df8943 {
+background: linear-gradient(135deg, rgba(180,0,0,1) 0%, rgb(255, 150, 150) 100%);
+border-radius: 2px;
+border: 1px solid darkred;
+}
+
+.spine_e1e976, .spineBorder_e1e976 {
+visibility: hidden;
+}
+
 /*
-TreeView 
+emojiPicker
 embedded messages
 Balloon (notifications for betterdiscord)
 */
@@ -622,8 +705,9 @@ TextBox
 Slider
 TreeView 
 scrollbar
-Balloon (notifications for betterdiscord)
+emojiPicker
 embedded messages
+Balloon (notifications for betterdiscord)
 */
 
 /* themed tabs */
