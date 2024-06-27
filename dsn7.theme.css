@@ -15,6 +15,10 @@
   --font-clan-body: Tahoma, sans-serif;
   --font-clan-signature: Tahoma, sans-serif;
 
+  --forward: url(https://numoder.github.io/DSN7/assets/icons/navigation/forward.png);
+--forward2: url(https://numoder.github.io/DSN7/assets/icons/navigation/forward2.png);
+
+
   /* dont touch */
   --scrollbar-width: 17px !important;
   --custom-scrollbar-scrollbar-width: 17px !important;
@@ -64,6 +68,11 @@
 
 --explorer-background: linear-gradient(135deg, rgba(243, 244, 247, 1) 0%, rgba(236, 231, 205, 1) 100%);
 --explorer-button-box-shadow: inset -1px -1px 0px 0px #d8d2bd, inset 1px 1px 0px 0px #ffffff80;
+
+--explorer-item-background: white;
+--explorer-item-border: 1px solid #ece9d8;
+
+--explorer-item-hover-border: 1px solid #316ac5;
 }
 
 .theme-dark {
@@ -93,7 +102,8 @@ max-width: 13px;
 max-height: 13px;
 }
 
-foreignObject, [id=":r4r:"], .assetsLargeMaskUserPopout_d5089b, .assetsLargeMaskUserPopoutV2_d5089b, .assetsLargeMaskStreamPreview_d5089b, .assetsLargeMaskVoiceChannel_d5089b, .assetsLargeMaskBiteSizePopout_d5089b {
+foreignObject, [id=":r4r:"], .assetsLargeMaskUserPopout_d5089b, .assetsLargeMaskUserPopoutV2_d5089b, .assetsLargeMaskStreamPreview_d5089b, .assetsLargeMaskVoiceChannel_d5089b, .assetsLargeMaskBiteSizePopout_d5089b,
+.assetWrapperMasked_cb3343 {
 mask: none !important;
 }
 
@@ -154,7 +164,7 @@ color: #fff !important;
 overflow: hidden !important;
 }
 
-.contentWrapper_af5dbb > div > div > .scrollerBase_c49869::-webkit-scrollbar{
+.contentWrapper_af5dbb > div > div > .scrollerBase_c49869::-webkit-scrollbar, .popout_f6639d.none_c49869.scrollerBase_c49869::-webkit-scrollbar{
 width: 0px !important;
 }
 
@@ -813,8 +823,34 @@ visibility: hidden;
 }
 
 /* emoji picker */
+
+
 .contentWrapper_af5dbb{
 border-radius: 0px;
+padding-top: 0px;
+grid-row-gap: 14px;
+}
+
+.navList_af5dbb > button{
+height: 38px !important;
+border-radius: 0px;
+padding: 0px 12px 0px 30px;
+}
+
+.navList_af5dbb > button:hover, .navButtonActive_af5dbb{
+box-shadow: inset 0px 3px 2px 0px white, inset 0px -1px 4px -1px black;
+border-radius: 2px;
+color: black;
+}
+.navList_af5dbb > button:active{
+background: linear-gradient(0deg, rgba(225,224,216,1) 0%, rgba(227,224,218,1) 100%);
+box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.25), inset 0px -1px 4px -1px rgba(0, 0, 0, 0.5);
+border-radius: 2px;
+}
+
+.navButtonActive_af5dbb{
+background-color: transparent;
+color: rgb(255, 138, 95);
 }
 
 
@@ -823,8 +859,14 @@ border-radius: 0px;
 padding-bottom: 0px !important;
 }
 
-.listItems_dcade6{
+.listItems_dcade6 {
 inset: 0px 0px 0px 0px;
+}
+
+.listItems_dcade6:has(.packHeader_de4721) {
+position: relative !important;
+left: -16px !important;
+margin-left: 16px;
 }
 
 .theme-light .categoryList_c6ee36,
@@ -869,13 +911,14 @@ margin-right: 8px;
   padding-left: 0px !important;
 }
 
-.theme-light .emojiItem_fbfedd{
-  background: white;
-  border: 1px solid #ece9d8;
-  border-radius: 0px;
+.emojiItem_fbfedd, .row_a708c4 img, .row_a708c4 canvas {
+  background: var(--explorer-item-background);
+  border: var(--explorer-item-border);
+  border-radius: 0px !important;
 }
-.theme-light .emojiItem_fbfedd:hover{
-  border: 1px solid rgb(49, 106, 197);
+
+.theme-light .emojiItem_fbfedd:hover {
+  border: var(--explorer-item-hover-border);
 }
 
 .theme-light .container_b56bbc {
@@ -912,20 +955,33 @@ margin-right: 8px;
 }
 
 /* input */
-.searchBar_c6ee36, .searchBar_a46bef, .searchBar_f0963d .searchBarComponent_f0963d, .searchBar_e0840f {
+.searchBar_c6ee36, .searchBar_a46bef, .searchBar_f0963d .searchBarComponent_f0963d, .searchBar_e0840f, .contentWrapper_af5dbb .wrapper_da9f92 > div {
 background: var(--input-background);
 border-radius: 0px !important;
 border: var(--search-border);
 }
+
+
+.searchBar_f0963d .searchBarComponent_f0963d {
+height: 20px !important;
+}
+
+.searchBar_c6ee36, .searchBar_f0963d .searchBarComponent_f0963d{
+line-height: normal;
+}
+
+.medium_c18ec9 .input_c18ec9, .medium_c18ec9 .tag_c18ec9{
+max-height: 18px !important;
+}
+
 
 /*
 embedded messages
 Balloon tooltips
 vencord Music Player
 status icons
+popout profile
 */
-
-/* ---dark(zune) interface--- */
 
 /* themed tabs */
 .userProfileModalOverlayBackground_c69a7b .tabBarItem_b9fccc:first-of-type[aria-selected=true] {
@@ -937,8 +993,11 @@ border-bottom: transparent;
 box-shadow: inset 0px -1px 0px 0px var(--profile-gradient-button-color);
 }
 
-.tabBarItem_c1519f .text-sm\/normal_dc00ef{
+.tabBarItem_c1519f .text-sm\/normal_dc00ef {
 margin-top: 3px;
+}
+
+.tabBarItem_c1519f.themed_a0 .text-sm\/normal_dc00ef {
 color: white !important;
 }
 
@@ -958,6 +1017,13 @@ background: var(--profile-gradient-primary-color) !important;
 /* ---context menus--- */
 
 /* ---icons--- */
+.iconContainer_c18ec9:has([d="M17.3 18.7a1 1 0 0 0 1.4-1.4L13.42 12l5.3-5.3a1 1 0 0 0-1.42-1.4L12 10.58l-5.3-5.3a1 1 0 0 0-1.4 1.42L10.58 12l-5.3 5.3a1 1 0 1 0 1.42 1.4L12 13.42l5.3 5.3Z"]), .iconContainer_effbe2:has([d="M17.3 18.7a1 1 0 0 0 1.4-1.4L13.42 12l5.3-5.3a1 1 0 0 0-1.42-1.4L12 10.58l-5.3-5.3a1 1 0 0 0-1.4 1.42L10.58 12l-5.3 5.3a1 1 0 1 0 1.42 1.4L12 13.42l5.3 5.3Z"]) svg {
+background: var(--forward);
+color: transparent;
+}
+.iconContainer_c18ec9:hover:has(path[fill="currentColor"][d="M17.3 18.7a1 1 0 0 0 1.4-1.4L13.42 12l5.3-5.3a1 1 0 0 0-1.42-1.4L12 10.58l-5.3-5.3a1 1 0 0 0-1.4 1.42L10.58 12l-5.3 5.3a1 1 0 1 0 1.42 1.4L12 13.42l5.3 5.3Z"]), .iconContainer_effbe2:hover:has([d="M17.3 18.7a1 1 0 0 0 1.4-1.4L13.42 12l5.3-5.3a1 1 0 0 0-1.42-1.4L12 10.58l-5.3-5.3a1 1 0 0 0-1.4 1.42L10.58 12l-5.3 5.3a1 1 0 1 0 1.42 1.4L12 13.42l5.3 5.3Z"]) svg {
+background: var(--forward2);
+}
 
 /* ---popout profile / profile--- */
 
