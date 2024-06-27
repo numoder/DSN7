@@ -160,11 +160,12 @@ color: #fff !important;
 .userPopoutOverlayBackground_c69a7b .scrollerBase_c49869,
 .userPanelInner_c69a7b > div,
 .menu_d90b3d > div, .modal_b545d5, .modalContent_b545d5, .searchBar_c6ee36 > div, .channelTextArea_d0696b > div,
-.animatorLeft_f88ae3:has(.emojiPicker_c6ee36) .categoryList_c6ee36 .scrollerBase_c49869, .focusLock_f9a4c9, .wrapper_da9f92 > div > .inner_effbe2 {
+.animatorLeft_f88ae3:has(.emojiPicker_c6ee36) .categoryList_c6ee36 .scrollerBase_c49869, .focusLock_f9a4c9, .wrapper_da9f92 > div > .inner_effbe2{
 overflow: hidden !important;
 }
 
-.contentWrapper_af5dbb > div > div > .scrollerBase_c49869::-webkit-scrollbar, .popout_f6639d.none_c49869.scrollerBase_c49869::-webkit-scrollbar{
+
+.contentWrapper_af5dbb > div > div > .scrollerBase_c49869::-webkit-scrollbar, .popout_f6639d.none_c49869.scrollerBase_c49869::-webkit-scrollbar, .sidebarRegionScroller_c25c6d::-webkit-scrollbar{
 width: 0px !important;
 }
 
@@ -823,34 +824,31 @@ visibility: hidden;
 }
 
 /* emoji picker */
-
-
 .contentWrapper_af5dbb{
 border-radius: 0px;
-padding-top: 0px;
-grid-row-gap: 14px;
+padding: 2px 0px;
+grid-row-gap: 16px;
 }
 
 .navList_af5dbb > button{
 height: 38px !important;
 border-radius: 0px;
-padding: 0px 12px 0px 30px;
 }
 
 .navList_af5dbb > button:hover, .navButtonActive_af5dbb{
-box-shadow: inset 0px 3px 2px 0px white, inset 0px -1px 4px -1px black;
-border-radius: 2px;
+box-shadow: inset 0px 0px 0px 1px #d8d2bd, inset 0px 3px 2px 0px white, inset 0px -1px 4px -1px black;
+border-radius: 3px !important;
 color: black;
 }
 .navList_af5dbb > button:active{
 background: linear-gradient(0deg, rgba(225,224,216,1) 0%, rgba(227,224,218,1) 100%);
-box-shadow: inset 0px 2px 2px 0px rgba(0, 0, 0, 0.25), inset 0px -1px 4px -1px rgba(0, 0, 0, 0.5);
+box-shadow: inset 0px 0px 0px 1px #9d9d92, inset 0px 2px 2px 0px rgba(0, 0, 0, 0.25), inset 0px -1px 4px -1px rgba(0, 0, 0, 0.5);
 border-radius: 2px;
 }
 
 .navButtonActive_af5dbb{
 background-color: transparent;
-color: rgb(255, 138, 95);
+box-shadow: inset 0px 0px 0px 1px #d8d2bd, inset 0px 3px 2px 0px white, inset 0px -1px 4px -1px black;
 }
 
 
@@ -865,8 +863,7 @@ inset: 0px 0px 0px 0px;
 
 .listItems_dcade6:has(.packHeader_de4721) {
 position: relative !important;
-left: -16px !important;
-margin-left: 16px;
+left: 0px !important;
 }
 
 .theme-light .categoryList_c6ee36,
@@ -929,25 +926,29 @@ margin-right: 8px;
   padding: 0px 16px 0px 0px !important;
 }
 
+.header_b56bbc{
+  background-color: transparent;
+}
+
 .header_d8cdac::before{
   box-shadow: var(--explorer-button-box-shadow);
-  line-height: 34px;
-  content: "Stickers";
+  line-height: 36px;
   padding: 0px 5.5px;
+  content: "Stickers";
 }
 
 .header_b56bbc > div::before{
   box-shadow: var(--explorer-button-box-shadow);
-  line-height: 34px;
-  content: "Gifs";
+  line-height: 36px;
   padding: 0px 8px;
+  content: "Gifs";
 }
 
 .emojiPickerHasTabWrapper_c6ee36 .header_c6ee36::before {
   box-shadow: var(--explorer-button-box-shadow);
-  content: "Emojis";
-  line-height: 34px;
+  line-height: 36px;
   padding: 0px 8px;
+  content: "Emojis";
 }
 
 .contentWrapper_af5dbb{
@@ -955,12 +956,11 @@ margin-right: 8px;
 }
 
 /* input */
-.searchBar_c6ee36, .searchBar_a46bef, .searchBar_f0963d .searchBarComponent_f0963d, .searchBar_e0840f, .contentWrapper_af5dbb .wrapper_da9f92 > div {
+.searchBar_c6ee36, .searchBar_a46bef, .searchBar_f0963d .searchBarComponent_f0963d, .searchBar_e0840f, .contentWrapper_af5dbb .wrapper_da9f92 > div, .searchBar_b56bbc {
 background: var(--input-background);
 border-radius: 0px !important;
 border: var(--search-border);
 }
-
 
 .searchBar_f0963d .searchBarComponent_f0963d {
 height: 20px !important;
@@ -971,13 +971,36 @@ line-height: normal;
 }
 
 .medium_c18ec9 .input_c18ec9, .medium_c18ec9 .tag_c18ec9{
-max-height: 18px !important;
+max-height: 20px !important;
 }
 
+/* tooltips */
+.theme-light {
+--tooltip-background: #ffffe1;
+--tooltip-border: 1px solid black;
+}
 
+.theme-dark {
+--tooltip-background: #bebebe;
+--tooltip-border: 1px solid #2f3136;
+}
+
+.tooltipPrimary_b6c360{
+background-color: var(--tooltip-background) !important;
+border: var(--tooltip-border);
+border-radius: 0px;
+box-shadow: 2px 2px 2px 1px gray;
+}
+
+.tooltipContent_b6c360{
+padding: 2px 3px;
+}
+
+.tooltipPointer_b6c360 {
+visibility: hidden;
+}
 /*
 embedded messages
-Balloon tooltips
 vencord Music Player
 status icons
 popout profile
@@ -1017,12 +1040,43 @@ background: var(--profile-gradient-primary-color) !important;
 /* ---context menus--- */
 
 /* ---icons--- */
-.iconContainer_c18ec9:has([d="M17.3 18.7a1 1 0 0 0 1.4-1.4L13.42 12l5.3-5.3a1 1 0 0 0-1.42-1.4L12 10.58l-5.3-5.3a1 1 0 0 0-1.4 1.42L10.58 12l-5.3 5.3a1 1 0 1 0 1.42 1.4L12 13.42l5.3 5.3Z"]), .iconContainer_effbe2:has([d="M17.3 18.7a1 1 0 0 0 1.4-1.4L13.42 12l5.3-5.3a1 1 0 0 0-1.42-1.4L12 10.58l-5.3-5.3a1 1 0 0 0-1.4 1.42L10.58 12l-5.3 5.3a1 1 0 1 0 1.42 1.4L12 13.42l5.3 5.3Z"]) svg {
+.icon_a46bef:has([d="M17.3 18.7a1 1 0 0 0 1.4-1.4L13.42 12l5.3-5.3a1 1 0 0 0-1.42-1.4L12 10.58l-5.3-5.3a1 1 0 0 0-1.4 1.42L10.58 12l-5.3 5.3a1 1 0 1 0 1.42 1.4L12 13.42l5.3 5.3Z"]) {
 background: var(--forward);
-color: transparent;
+width: 20px;
+height: 20px;
 }
-.iconContainer_c18ec9:hover:has(path[fill="currentColor"][d="M17.3 18.7a1 1 0 0 0 1.4-1.4L13.42 12l5.3-5.3a1 1 0 0 0-1.42-1.4L12 10.58l-5.3-5.3a1 1 0 0 0-1.4 1.42L10.58 12l-5.3 5.3a1 1 0 1 0 1.42 1.4L12 13.42l5.3 5.3Z"]), .iconContainer_effbe2:hover:has([d="M17.3 18.7a1 1 0 0 0 1.4-1.4L13.42 12l5.3-5.3a1 1 0 0 0-1.42-1.4L12 10.58l-5.3-5.3a1 1 0 0 0-1.4 1.42L10.58 12l-5.3 5.3a1 1 0 1 0 1.42 1.4L12 13.42l5.3 5.3Z"]) svg {
+
+.icon_a46bef:hover:has(path[fill="currentColor"][d="M17.3 18.7a1 1 0 0 0 1.4-1.4L13.42 12l5.3-5.3a1 1 0 0 0-1.42-1.4L12 10.58l-5.3-5.3a1 1 0 0 0-1.4 1.42L10.58 12l-5.3 5.3a1 1 0 1 0 1.42 1.4L12 13.42l5.3 5.3Z"]) {
 background: var(--forward2);
 }
 
+[id="gif-picker-tab"]:before{
+content: "gifs";
+color: transparent;
+background-image: url(https://numoder.github.io/DSN7/assets/icons/gif.png);
+width: 24px;
+height: 24px;
+background-size:cover;
+margin-right: 6px;
+}
+
+.stickersNavItem_af5dbb:before {
+background: url(https://numoder.github.io/DSN7/assets/icons/sticker.png) no-repeat;
+background-size: contain;
+content: "";
+width: 24px;
+height: 24px;
+margin-right: 6px;
+}
+
+[id="emoji-picker-tab"]:before {
+background: url(https://numoder.github.io/DSN7/assets/icons/emojis/ohaye.gif) no-repeat;
+content: "";
+width: 24px;
+height: 24px;
+border-radius: 50% !important;
+margin-right: 6px;
+}
+
 /* ---popout profile / profile--- */
+
