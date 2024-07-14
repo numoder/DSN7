@@ -686,10 +686,6 @@ border-radius: 2px;
 box-shadow: 1px 0 0 #fff,1px 1px 0 #fff,0 1px 0 #fff,-1px 0 0 #9d9c99,-1px -1px 0 #9d9c99,0 -1px 0 #9d9c99,-1px 1px 0 #fff,1px -1px #9d9c99;
 }
 
-.theme-light .barFill_c7a159 {
-background: none;
-}
-
 .theme-light {
   --grabber-texture:url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -0.5 11 21' shape-rendering='crispEdges'%3E%3Cpath stroke='%23becbd3' d='M1 0h1M0 1h1'/%3E%3Cpath stroke='%23b6c5cd' d='M2 0h1M0 2h1'/%3E%3Cpath stroke='%23b5c4cd' d='M3 0h5M0 3h1M0 4h1M0 5h1M0 6h1M0 7h1M0 8h1M0 9h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1'/%3E%3Cpath stroke='%23afbfc8' d='M8 0h1M0 14h1'/%3E%3Cpath stroke='%239fb2be' d='M9 0h1M0 15h1'/%3E%3Cpath stroke='%23a6d1b1' d='M1 1h1'/%3E%3Cpath stroke='%236fd16e' d='M2 1h1M1 2h1'/%3E%3Cpath stroke='%2367ce65' d='M3 1h1M1 3h1'/%3E%3Cpath stroke='%2366ce64' d='M4 1h3'/%3E%3Cpath stroke='%2362cd61' d='M7 1h1'/%3E%3Cpath stroke='%2345c343' d='M8 1h1M7 2h1'/%3E%3Cpath stroke='%2363ac76' d='M9 1h1M2 16h1m0 1h1m0 1h1'/%3E%3Cpath stroke='%23879aa6' d='M10 1h1'/%3E%3Cpath stroke='%2363cd62' d='M2 2h1'/%3E%3Cpath stroke='%2349c547' d='M3 2h1M2 3h1'/%3E%3Cpath stroke='%2347c446' d='M4 2h3'/%3E%3Cpath stroke='%2321b71f' d='M8 2h1'/%3E%3Cpath stroke='%231da41c' d='M9 2h1'/%3E%3Cpath stroke='%237d8e99' d='M10 2h1'/%3E%3Cpath stroke='%2325b923' d='M3 3h1'/%3E%3Cpath stroke='%2321b81f' d='M4 3h4M2 15h1'/%3E%3Cpath stroke='%231ea71c' d='M8 3h1'/%3E%3Cpath stroke='%231b9619' d='M9 3h1'/%3E%3Cpath stroke='%23778892' d='M10 3h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1'/%3E%3Cpath stroke='%23f7f7f4' d='M1 4h1M1 5h1M1 6h1M1 7h1M1 8h1M1 9h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1'/%3E%3Cpath stroke='%23f5f5f2' d='M2 4h1M2 5h1M2 6h1M2 7h1M2 8h1M2 9h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1'/%3E%3Cpath stroke='%23f3f3ef' d='M3 4h5M3 5h5M3 6h5M3 7h5M3 8h5M3 9h5m-5 1h5m-5 1h5m-5 1h5m-5 1h4m-4 1h3m-2 1h1'/%3E%3Cpath stroke='%23dcdcd9' d='M8 4h1M8 5h1M8 6h1M8 7h1M8 8h1M8 9h1m-1 1h1m-1 1h1m-1 1h1'/%3E%3Cpath stroke='%23c3c3c0' d='M9 4h1M9 5h1M9 6h1M9 7h1M9 8h1M9 9h1m-1 1h1m-1 1h1m-1 1h1'/%3E%3Cpath stroke='%23f1f1ed' d='M7 13h1m-2 1h1m-2 1h1'/%3E%3Cpath stroke='%23dbdbd8' d='M8 13h1'/%3E%3Cpath stroke='%23c4c4c1' d='M9 13h1'/%3E%3Cpath stroke='%234bc549' d='M1 14h1'/%3E%3Cpath stroke='%23f4f4f1' d='M2 14h1'/%3E%3Cpath stroke='%23e6e6e2' d='M7 14h1m-2 1h1'/%3E%3Cpath stroke='%23cececa' d='M8 14h1'/%3E%3Cpath stroke='%231a9319' d='M9 14h1'/%3E%3Cpath stroke='%23788993' d='M10 14h1'/%3E%3Cpath stroke='%2369b17b' d='M1 15h1'/%3E%3Cpath stroke='%23f2f2ee' d='M3 15h1m0 1h1'/%3E%3Cpath stroke='%23d0d0cc' d='M7 15h1m-2 1h1'/%3E%3Cpath stroke='%231a9118' d='M8 15h1m-2 1h1m-2 1h1'/%3E%3Cpath stroke='%234c845a' d='M9 15h1'/%3E%3Cpath stroke='%2372838d' d='M10 15h1'/%3E%3Cpath stroke='%2391a6b2' d='M1 16h1m0 1h1m0 1h1m0 1h1'/%3E%3Cpath stroke='%2321b61f' d='M3 16h1m0 1h1'/%3E%3Cpath stroke='%23e7e7e3' d='M5 16h1'/%3E%3Cpath stroke='%234b8259' d='M8 16h1m-2 1h1m-2 1h1'/%3E%3Cpath stroke='%236e7e88' d='M9 16h1m-2 1h1m-2 1h1m-2 1h1'/%3E%3Cpath stroke='%23d7d7d4' d='M5 17h1'/%3E%3Cpath stroke='%231da21b' d='M5 18h1'/%3E%3Cpath stroke='%23589868' d='M5 19h1'/%3E%3Cpath stroke='%2380929e' d='M5 20h1'/%3E%3C/svg%3E");
 }
@@ -1341,7 +1337,7 @@ box-shadow: 0px 0px 1px 0px #000 inset, 0px 0px 0px 1px #606263 inset;
   background: var(--file-background) !important;
 }
 
-.wrapperAudio_f72aac .audioControls_f72aac {
+.wrapperAudio_f72aac .audioControls_f72aac, .mediaBarInteractionVolume_d12f5a {
   background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.05) 0%, rgba(155, 158, 202, 0.25) 44.59%, rgba(73, 79, 159, 0.47) 100%), #5D79B7;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), -3px 0px 2px 0px #7B9CF2 inset, 0px 3px 2px 0px rgba(136, 177, 253, 0.60) inset, 0px -3px 2px 0px #3A3F86 inset, 3px 0px 4px 0px #6E75E8 inset;
   border-radius: 40px;
@@ -1375,45 +1371,60 @@ box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.50) inset, 0px -1px 1px 0px rgba(0, 
   color: #6885BA;
 }
 
-.mediaBarWrapper_d12f5a:before, .mediaBarWrapper_d12f5a:after{
-  visibility: hidden !important;
-}
-
 .mediaBarWrapper_d12f5a{
   background: linear-gradient(180deg, #26318C 0%, #8EBADC 100%);
-  box-shadow: 0px 0px 1px 1px rgba(255, 255, 255, 0.25) inset;
-  border-radius: 4px;
-  height: 10px;
+  box-shadow: 0px -1px 2px 0px rgba(255, 255, 255, 0.50) inset, 0px 0px 0px 1px #26318C inset;
+  border-radius: 50px;
+  height: 7px;
 }
 
-.mediaBarProgress_d12f5a, .mediaBarProgress_d12f5a::before, .mediaBarProgress_d12f5a::after{
-  background: linear-gradient(180deg, #C7F9C5 0%, #59A356 100%);
+.buffer_d12f5a{
+  border-radius: 50px;
 }
 
-.mediaBarProgress_d12f5a::after{
-  border-radius: 0 5px 5px 0 !important;
-  width: 5px;
+.mediaBarProgress_d12f5a{
+  background: linear-gradient(180deg, #9DE4A3 0%, #2ED331 50%, #8AE290 100%);
+  box-shadow: 0px -1px 2px 0px rgba(255, 255, 255, 0.50) inset, 0px 0px 0px 1px #26318C inset;
+  border-radius: 50px;
+  height: 7px;
+}
+
+.mediaBarWrapper_d12f5a::before, .mediaBarWrapper_d12f5a::after, .buffer_d12f5a::before, .buffer_d12f5a::after, .fakeEdges_d12f5a:before, .fakeEdges_d12f5a:after{
+  width: 0px !important;
+  background: transparent !important;
 }
 
 .durationTimeWrapper_f72aac {
   background: #000;
-  box-shadow: 0px -1px 3px 1px rgb(200, 200, 200) inset, 0px 1px 10px 1px rgba(255, 255, 255, 0.25) inset;
-  border-radius: 6px;
+  border: 1px solid limegreen;
   padding: 3px 4px;
   color: limegreen;
 }
 
 .durationTimeWrapper_f72aac span{
-  font-family: "Verdana";
+  font-family: "Arial" !important;
   font-weight: bold;
 }
 
-.mediaBarGrabber_d12f5a {
-  height: 22px;
-  width: 11px;
-  top: 0px;
-  background: url();
-  /* background: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 -0.5 11 22' shape-rendering='crispEdges'%3E%3Cpath stroke='%23f2f1e7' d='M0 0h1m9 0h1M0 21h1m9 0h1'/%3E%3Cpath stroke='%23879aa6' d='M1 0h1m8 20h1'/%3E%3Cpath stroke='%237d8e99' d='M2 0h1m7 19h1'/%3E%3Cpath stroke='%23778892' d='M3 0h5m2 3h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1'/%3E%3Cpath stroke='%23788993' d='M8 0h1m1 2h1'/%3E%3Cpath stroke='%2372838d' d='M9 0h1m0 1h1'/%3E%3Cpath stroke='%239fb2be' d='M0 1h1m8 20h1'/%3E%3Cpath stroke='%2363af76' d='M1 1h1m7 19h1'/%3E%3Cpath stroke='%231eab1c' d='M2 1h1m6 18h1'/%3E%3Cpath stroke='%231c9d1a' d='M3 1h1'/%3E%3Cpath stroke='%231b9a1a' d='M4 1h3m1 0h1m0 1h1'/%3E%3Cpath stroke='%231b9b1a' d='M7 1h1'/%3E%3Cpath stroke='%234d875b' d='M9 1h1'/%3E%3Cpath stroke='%23afbfc8' d='M0 2h1m7 19h1'/%3E%3Cpath stroke='%2346ca44' d='M1 2h1m5 17h1m0 1h1'/%3E%3Cpath stroke='%2322be20' d='M2 2h1m5 17h1'/%3E%3Cpath stroke='%231faf1d' d='M3 2h1'/%3E%3Cpath stroke='%231fae1d' d='M4 2h3'/%3E%3Cpath stroke='%231fad1d' d='M7 2h1'/%3E%3Cpath stroke='%231da11b' d='M8 2h1'/%3E%3Cpath stroke='%23b5c4cd' d='M0 3h1M0 4h1M0 5h1M0 6h1M0 7h1M0 8h1M0 9h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m2 3h5'/%3E%3Cpath stroke='%23f7f7f4' d='M1 3h1M1 4h1M1 5h1M1 6h1M1 7h1M1 8h1M1 9h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1'/%3E%3Cpath stroke='%23f5f5f2' d='M2 3h1M2 4h1M2 5h1M2 6h1M2 7h1M2 8h1M2 9h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1'/%3E%3Cpath stroke='%23f3f3ef' d='M3 3h4M3 4h5M3 5h5M3 6h5M3 7h5M3 8h5M3 9h5m-5 1h5m-5 1h5m-5 1h5m-5 1h5m-5 1h5m-5 1h5m-5 1h5m-5 1h5m-5 1h5'/%3E%3Cpath stroke='%23f1f1ed' d='M7 3h1'/%3E%3Cpath stroke='%23dbdbd8' d='M8 3h1'/%3E%3Cpath stroke='%23c4c4c1' d='M9 3h1'/%3E%3Cpath stroke='%23ddddd9' d='M8 4h1M8 18h1'/%3E%3Cpath stroke='%23c6c6c3' d='M9 4h1M9 18h1'/%3E%3Cpath stroke='%23dcdcd9' d='M8 5h1M8 6h1M8 7h1M8 8h1M8 9h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1'/%3E%3Cpath stroke='%23c3c3c0' d='M9 5h1M9 6h1M9 7h1M9 8h1M9 9h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1m-1 1h1'/%3E%3Cpath stroke='%23b6c5cd' d='M0 19h1m1 2h1'/%3E%3Cpath stroke='%2370d66f' d='M1 19h1m0 1h1'/%3E%3Cpath stroke='%2364d362' d='M2 19h1'/%3E%3Cpath stroke='%234acb48' d='M3 19h1'/%3E%3Cpath stroke='%2348cb46' d='M4 19h3'/%3E%3Cpath stroke='%23becbd3' d='M0 20h1m0 1h1'/%3E%3Cpath stroke='%23a6d2b1' d='M1 20h1'/%3E%3Cpath stroke='%2367d466' d='M3 20h1'/%3E%3Cpath stroke='%2366d465' d='M4 20h3'/%3E%3Cpath stroke='%2363d362' d='M7 20h1'/%3E%3C/svg%3E"); */
+#vc-spotify-progress-bar>[class^=slider]:active [class^=grabber],
+.horizontal_d12f5a:active .mediaBarGrabber_d12f5a{
+  background-position: 8px 0px !important;
+}
+
+#vc-spotify-progress-bar>[class^=slider] [class^=grabber],
+.horizontal_d12f5a .mediaBarGrabber_d12f5a {
+  width: 8px !important;
+  height: 14px !important;
+  top: 2px !important;
+  background: url(https://numoder.github.io/DSN7/assets/icons/navigation/audioscrubba.png);
+}
+
+#vc-spotify-progress-bar>[class^=slider] {
+  padding: 4px !important;
+}
+
+#vc-spotify-progress-bar>[class^=slider] [class^=grabber]{
+  top: 5px !important;
 }
 
 /* video controls */
@@ -1466,10 +1477,6 @@ opacity: 1 !important;
   color: #0F3B8E !important;
 }
 
-.videoControls_f72aac > div:not(.horizontal_d12f5a):not(.durationTimeWrapper_f72aac):hover svg{
-
-}
-
 .videoControls_f72aac > div:not(.horizontal_d12f5a):not(.durationTimeWrapper_f72aac):hover > div,
 .videoControls_f72aac > div:not(.horizontal_d12f5a):not(.durationTimeWrapper_f72aac):hover > svg,
 .videoControls_f72aac > div:not(.horizontal_d12f5a):not(.durationTimeWrapper_f72aac):hover > button
@@ -1489,9 +1496,116 @@ opacity: 1 !important;
 padding: 0px;
 }
 
+/* vencord music player */
+.theme-light div#vc-spotify-player{
+  background: rgb(248, 251, 254);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.50) inset !important;
+  border: 1px solid #ACACAC;
+  padding: 0px;
+  border-radius: 4px;
+}
+
+.theme-dark div#vc-spotify-player{
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.05) 0%, rgba(155, 158, 202, 0.25) 44.59%, rgba(73, 79, 159, 0.47) 100%), #5D79B7;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), -3px 0px 2px 0px #7B9CF2 inset, 0px 3px 2px 0px rgba(136, 177, 253, 0.60) inset, 0px -3px 2px 0px #3A3F86 inset, 3px 0px 4px 0px #6E75E8 inset;
+  border: 1px solid white;
+  padding: 0px;
+  border-radius: 4px;
+}
+
+.theme-dark #vc-spotify-song-title{
+  color: lime;
+}
+
+#vc-spotify-info-wrapper img {
+  -webkit-box-reflect: below 1px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.1));
+  border: 1px solid gray;
+}
+
+#vc-spotify-album-expanded-wrapper{
+  margin: 4px;
+}
+
+#vc-spotify-info-wrapper{
+  height: 5em;
+  margin-left: 3px;
+}
+
+.vc-spotify-button-row {
+  background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.05) 0%, rgba(155, 158, 202, 0.25) 44.59%, rgba(73, 79, 159, 0.47) 100%), #5D79B7;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), -3px 0px 2px 0px #7B9CF2 inset, 0px 3px 2px 0px rgba(136, 177, 253, 0.60) inset, 0px -3px 2px 0px #3A3F86 inset, 3px 0px 4px 0px #6E75E8 inset;
+padding: 4px;
+}
+
+.vc-spotify-button{
+  border-radius: 0px;
+  size: 36px;
+background: linear-gradient(180deg, rgba(0, 0, 0, 0.30) 0%, rgba(122, 122, 122, 0.00) 50%, rgba(255, 255, 255, 0.30) 100%);
+}
+
+.vc-spotify-button:first-child{
+  border-radius: 30px 0px 0px 30px;
+}
+
+.vc-spotify-button:last-child{
+  border-radius: 0px 30px 30px 0px;
+}
+
+.vc-spotify-button > svg{
+  size: 24px;
+  border-radius: 18px;
+background: radial-gradient(94.44% 94.44% at 50% 5.56%, #FFF 0%, #E3EDFB 31.74%, #657BAA 100%);
+box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.50) inset, 0.25px 0.25px 2px 1px rgba(0, 0, 0, 0.25), 0px -1px 1px 0px rgba(0, 0, 0, 0.50) inset, 0px -1.5px 3px 1px #1623A5 inset, 1px -3px 3px 1px rgba(255, 255, 255, 0.50) inset;
+}
+
+.vc-spotify-button > svg:hover{
+background: linear-gradient(180deg, #FFF 25%, #B8D6FE 55%, #657BAA 100%);
+box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.50) inset, 0.25px 0.25px 2px 1px rgba(0, 255, 255, 0.25), 0.25px 0.25px 2px 1px rgba(0, 0, 0, 0.25), 0px -1.5px 3px 1px #1623A5 inset, 1px -3px 3px 1px rgba(255, 255, 255, 0.50) inset, 0px -2.5px 3px 1.5px #0FF inset;
+fill: orange;
+}
+
+.vc-spotify-button > svg:active{
+  background: radial-gradient(100% 100% at 50% 0%, #FFF 17%, #9DB1CB 40.85%, #6675A1 100%);
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.50) inset, 0px -1px 1px 0px rgba(0, 0, 0, 0.50) inset, 0px -2.5px 4px 1.5px #080C3A inset, 1px -3px 3px 1px rgba(255, 255, 255, 0.50) inset;
+fill:#080C3A;
+}
+
+.vc-spotify-button.vc-spotify-repeat-track svg, .vc-spotify-button.vc-spotify-repeat-context svg, .vc-spotify-button.vc-spotify-shuffle-on svg {
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.50) inset, 0.25px 0.25px 2px 1px rgba(0, 0, 0, 0.25), 0px -3px 5px 2px rgba(50, 205, 50, 0.50) inset, 0px -1.5px 3px 1px #1623A5 inset, 1px -3px 3px 1px rgba(255, 255, 255, 0.50) inset !important;
+}
+
+#vc-spotify-progress-bar > div{
+  padding: 4px;
+}
+
+#vc-spotify-progress-bar .bar_c7a159 {
+  border-radius: 50px;
+  height: 7px;
+}
+
+#vc-spotify-progress-bar .bar_c7a159{
+  background: linear-gradient(180deg, #9EAAC6 0%, #FFF 100%);
+  box-shadow: none;
+}
+
+.barFill_c7a159 {
+  background: linear-gradient(180deg, #17A600 0%, #8ECD94 100%);
+  }
+  
+
+#vc-spotify-progress-bar > .formText_b89ec7{
+  padding: 0px;
+  margin: 4px;
+}
+
+/* status icons */
+
+[mask="url(#svg-mask-status-online)"] {
+  mask: none;
+  /* fill: transparent !important; */
+}
+
 /*
-vencord Music Player
-status icons
 popout profile
 friends list
 friend category
