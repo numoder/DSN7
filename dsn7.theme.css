@@ -893,6 +893,7 @@ padding-top: 0px;
   --explorer-background: linear-gradient(135deg, rgba(243,244,247,1) 0%, rgba(236,231,205,1) 100%);
   --explorer-box-shadow:  inset -1px -1px 0px 0px #d8d2bd, inset 1px 1px 0px 0px #ffffff80;
   --category-color: #000;
+  --brand-530: #316ac5;
   --category-hover: var(--brand-530);
 
   --channel-tree-view-border:  1px dotted grey;
@@ -923,6 +924,7 @@ z-index: 2;
 .iconVisibility_a08117:hover .overflow_c74e70{
   background: var(--category-hover);
   text-decoration: underline;
+  color: white !important;
 }
 
 
@@ -939,7 +941,14 @@ rotate: 90deg;
 margin-right: 0px;
 }
 
-.link_d8bfb3:before{
+.repliedMessage_f9f2ca:before {
+  color: transparent !important;
+  border-radius: 0px;
+  border-top: var(--channel-tree-view-border);
+  border-left:  var(--channel-tree-view-border);
+}
+
+.link_d8bfb3:before {
 content: "---" !important;
 height: 24px;
 width: 10px;
@@ -1218,6 +1227,10 @@ border-radius: 0px !important;
 border: var(--search-border);
 }
 
+.lookFilled_f6639d.select_f6639d{
+  border: var(--search-border);
+}
+
 .searchBar_f0963d .searchBarComponent_f0963d {
 height: 20px !important;
 }
@@ -1320,6 +1333,49 @@ box-shadow: 0px 0px 1px 0px #000 inset, 0px 0px 0px 1px #606263 inset;
   background: linear-gradient(180deg, #FFF 0%, #D0D0D0 100%);
   box-shadow: 0px 0px 0px 1px #AFAFAF inset;
 }
+
+/* apple music */
+.embedWrapper_b558d0:has([href="https://music.apple.com/"]) {
+  border-radius: 11px;
+  padding: 10px;
+  font-family: "Helvetica" !important;
+}
+
+.theme-light .embedWrapper_b558d0:has([href="https://music.apple.com/"]) {
+  background: linear-gradient(180deg, #F3F3F3 0%, #B5B5B5 100%);
+  border: 1px solid #A2AAAD;
+}
+
+.theme-dark .embedWrapper_b558d0:has([href="https://music.apple.com/"]) {
+  background: black;
+  border: 1px solid #A2AAAD;
+}
+
+.theme-light .embedWrapper_b558d0:has([href="https://music.apple.com/"]) > .gridContainer_b0068a {
+  background: #222;
+  border-radius: 11px;
+  border: 1px solid #A2AAAD;
+}
+
+a.anchor_af404b[href="https://music.apple.com/"],
+.embedWrapper_b558d0:has([href="https://music.apple.com/"]) .embedDescription_b0068a {
+  color: gray;
+}
+
+.embedWrapper_b558d0:has([href="https://music.apple.com/"]) .anchor_af404b.anchorUnderlineOnHover_af404b.embedAuthorNameLink_b0068a.embedLink_b0068a.embedAuthorName_b0068a {
+  color: darkgray;
+  font-weight: bold !important;
+}
+
+.embedWrapper_b558d0:has([href="https://music.apple.com/"]) .imageWrapper_d4597d {
+  transform: perspective(200px) rotateY(-20deg) !important;
+  -webkit-box-reflect: below 5px linear-gradient(to bottom, rgba(0,0,0,0.0), rgba(0,0,0,0.4));
+}
+.embedWrapper_b558d0:has([href="https://music.apple.com/"]) .imageContent_cf58b5 {
+  padding-bottom: 20px;
+}
+
+
 
 /* file */
 .theme-light{
@@ -1531,13 +1587,13 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), -3px 0px 2px 0px #7B9CF2 inset,
   margin-left: 3px;
 }
 
-.vc-spotify-button-row {
+.vc-spotify-button-row, .rippleContainer_d6cb89 {
   background: radial-gradient(50% 50% at 50% 50%, rgba(255, 255, 255, 0.05) 0%, rgba(155, 158, 202, 0.25) 44.59%, rgba(73, 79, 159, 0.47) 100%), #5D79B7;
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), -3px 0px 2px 0px #7B9CF2 inset, 0px 3px 2px 0px rgba(136, 177, 253, 0.60) inset, 0px -3px 2px 0px #3A3F86 inset, 3px 0px 4px 0px #6E75E8 inset;
 padding: 4px;
 }
 
-.vc-spotify-button{
+.vc-spotify-button {
   border-radius: 0px;
   size: 36px;
 background: linear-gradient(180deg, rgba(0, 0, 0, 0.30) 0%, rgba(122, 122, 122, 0.00) 50%, rgba(255, 255, 255, 0.30) 100%);
@@ -1551,23 +1607,23 @@ background: linear-gradient(180deg, rgba(0, 0, 0, 0.30) 0%, rgba(122, 122, 122, 
   border-radius: 0px 30px 30px 0px;
 }
 
-.vc-spotify-button > svg{
+.vc-spotify-button > svg, .playButtonContainer_d6cb89{
   size: 24px;
   border-radius: 18px;
-background: radial-gradient(94.44% 94.44% at 50% 5.56%, #FFF 0%, #E3EDFB 31.74%, #657BAA 100%);
+background: radial-gradient(94.44% 94.44% at 50% 5.56%, #FFF 0%, #E3EDFB 31.74%, #657BAA 100%) !important;
 box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.50) inset, 0.25px 0.25px 2px 1px rgba(0, 0, 0, 0.25), 0px -1px 1px 0px rgba(0, 0, 0, 0.50) inset, 0px -1.5px 3px 1px #1623A5 inset, 1px -3px 3px 1px rgba(255, 255, 255, 0.50) inset;
 }
 
-.vc-spotify-button > svg:hover{
-background: linear-gradient(180deg, #FFF 25%, #B8D6FE 55%, #657BAA 100%);
-box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.50) inset, 0.25px 0.25px 2px 1px rgba(0, 255, 255, 0.25), 0.25px 0.25px 2px 1px rgba(0, 0, 0, 0.25), 0px -1.5px 3px 1px #1623A5 inset, 1px -3px 3px 1px rgba(255, 255, 255, 0.50) inset, 0px -2.5px 3px 1.5px #0FF inset;
-fill: orange;
+.vc-spotify-button > svg:hover, .playButtonContainer_d6cb89:hover{
+background: linear-gradient(180deg, #FFF 25%, #B8D6FE 55%, #657BAA 100%) !important;
+box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.50) inset, 0.25px 0.25px 2px 1px rgba(0, 255, 255, 0.25), 0.25px 0.25px 2px 1px rgba(0, 0, 0, 0.25), 0px -1.5px 3px 1px #1623A5 inset, 1px -3px 3px 1px rgba(255, 255, 255, 0.50) inset, 0px -2.5px 3px 1.5px #0FF inset !important;
+fill: orange !important;
 }
 
-.vc-spotify-button > svg:active{
-  background: radial-gradient(100% 100% at 50% 0%, #FFF 17%, #9DB1CB 40.85%, #6675A1 100%);
-  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.50) inset, 0px -1px 1px 0px rgba(0, 0, 0, 0.50) inset, 0px -2.5px 4px 1.5px #080C3A inset, 1px -3px 3px 1px rgba(255, 255, 255, 0.50) inset;
-fill:#080C3A;
+.vc-spotify-button > svg:active, .playButtonContainer_d6cb89:active {
+  background: radial-gradient(100% 100% at 50% 0%, #FFF 17%, #9DB1CB 40.85%, #6675A1 100%) !important;
+  box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.50) inset, 0px -1px 1px 0px rgba(0, 0, 0, 0.50) inset, 0px -2.5px 4px 1.5px #080C3A inset, 1px -3px 3px 1px rgba(255, 255, 255, 0.50) inset !important;
+fill:#080C3A !important;
 }
 
 .vc-spotify-button.vc-spotify-repeat-track svg, .vc-spotify-button.vc-spotify-repeat-context svg, .vc-spotify-button.vc-spotify-shuffle-on svg {
@@ -1600,13 +1656,69 @@ fill:#080C3A;
 
 /* status icons */
 
-[mask="url(#svg-mask-status-online)"] {
-  mask: none;
-  /* fill: transparent !important; */
+rect[fill="#f0b232"], rect[fill="#f23f43"], rect[fill="#23a55a"], rect[height="15"][fill="#23a55a"]  {
+  mask: none !important;
+  fill: transparent !important;
+}
+
+.avatar_e9f61e:has(rect)::after{
+  top: 12px !important;
+  left: 2px;
+  position: relative;
+  z-index: 4;
+}
+
+.avatar_f9647d:has(rect)::after{
+  top: 12px !important;
+  left: 2px;
+  position: relative;
+  z-index: 4;
+
+}
+
+.avatar_f9647d:has(rect[fill="#23a55a"])::after,
+.avatar_e9f61e:has(rect[fill="#23a55a"])::after {
+  content: url(https://numoder.github.io/DSN7/assets/icons/status/online.svg) !important;
+  width: 10px !important;
+  height: 10px !important;
+}
+
+.avatar_f9647d:has(rect[fill="#f0b232"])::after,
+.avatar_e9f61e:has(rect[fill="#f0b232"])::after {
+  content: url(https://numoder.github.io/DSN7/assets/icons/status/idle.svg) !important;
+}
+
+.avatar_f9647d:has(rect[fill="#f23f43"])::after,
+.avatar_e9f61e:has(rect[fill="#f23f43"])::after {
+  content: url(https://numoder.github.io/DSN7/assets/icons/status/dnd.svg) !important;
+}
+
+.avatar_e9f61e:has(rect[height="15"][fill="#23a55a"])::after{
+  content: url(https://numoder.github.io/DSN7/assets/icons/status/phone.svg) !important;
+  left: 6px;
+}
+
+/* MSN STUFF NOW */
+.nowPlayingColumn_c2739c, .nowPlayingColumn_c2739c > .container_bf550a, .sidebar_a4d4d9, .privateChannels_f0963d, .themed_fc4f04, .container_c2739c, .theme-light .scroller_c47fa9, .theme-dark .scroller_c47fa9 {
+  background: rgba(255, 255, 255, 0);
+}
+
+/* lightmode */
+
+/* FRIENDS LIST */
+.theme-light .content_a4d4d9{
+  background: linear-gradient(180deg, #F8F8F8 0%, #CDD9EF 30%, #FEFEFE 100%) !important;
+}
+
+.privateChannels_f0963d > .scroller_c47fa9::-webkit-scrollbar {
+  width: 0px !important;
+}
+
+.privateChannels_f0963d {
+  border-image: linear-gradient(0deg, rgba(255, 255, 255, 0.00) 0%, #ffffff 30%, #ffffff 70%, rgba(255, 255, 255, 0) 100%) 1 / 0px 1px 0px 0px !important;
 }
 
 /*
-popout profile
 friends list
 friend category
 channels list
