@@ -1707,18 +1707,156 @@ rect[fill="#f0b232"], rect[fill="#f23f43"], rect[fill="#23a55a"], rect[height="1
 
 /* FRIENDS LIST */
 .theme-light .content_a4d4d9{
-  background: linear-gradient(180deg, #F8F8F8 0%, #CDD9EF 30%, #FEFEFE 100%) !important;
+  background: url(https://numoder.github.io/DSN7/assets/luna/background.png) no-repeat bottom right, linear-gradient(180deg, #F8F8F8 0%, #CDD9EF 30%, #FEFEFE 100%) center repeat !important;
+  box-shadow: inset 1px 0px 3px 0px #8596CA, inset 1px 0px 0px 0px #8596CA;
 }
 
 .privateChannels_f0963d > .scroller_c47fa9::-webkit-scrollbar {
   width: 0px !important;
 }
 
-.privateChannels_f0963d {
+.theme-light .privateChannels_f0963d {
   border-image: linear-gradient(0deg, rgba(255, 255, 255, 0.00) 0%, #ffffff 30%, #ffffff 70%, rgba(255, 255, 255, 0) 100%) 1 / 0px 1px 0px 0px !important;
 }
 
-/*
+.theme-light h2.privateChannelsHeaderContainer_c47fa9{
+font-family: Verdana;
+font-size: 18px;
+text-transform: none !important;
+border-bottom: 1px solid #8596CA;
+background: linear-gradient(0deg, #98a9db88 0%, rgba(255, 255, 255, 0.00) 50%);
+margin-left: 1px;
+}
+
+
+/* friend */
+li.channel_c91bad .avatar_f9647d{
+  border: 1px solid #ADBBD2;
+}
+
+li.channel_c91bad .layout_f9647d .content_f9647d {
+  color: #709BC7;
+}
+
+li.channel_c91bad .layout_f9647d .content_f9647d .overflow_c74e70{
+  font-weight: bold;
+}
+
+/* friend button hover */
+.interactive_f5eb4b:focus-within{
+  background: inherit;
+}
+
+.interactive_f5eb4b:hover{
+  background: linear-gradient(90deg, rgba(255, 165, 0, 0.00) 0%, rgba(255, 165, 0, 0.40) 23.5%, rgba(255, 165, 0, 0.00) 100%);
+}
+
+.interactive_f5eb4b:hover .layout_f9647d .content_f9647d,
+  .interactive_f5eb4b:focus-within .layout_f9647d .content_f9647d {
+  color: white !important;
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.interactive_f5eb4b:hover .avatar_f9647d{
+  border-image: linear-gradient(-135deg, #FFA500, #FFFF00, #FFA500 100%) 1 / 1px 1px 1px 1px !important;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* friend button active */
+.interactive_f5eb4b:active {
+  background: linear-gradient(90deg, rgba(255, 165, 0, 0.00) 0%, rgba(255, 165, 0, 0.80) 23.5%, rgba(255, 165, 0, 0.00) 100%);
+}
+
+.interactive_f5eb4b:active .layout_f9647d .content_f9647d {
+  color: white !important;
+  text-shadow: -1px -2px 0px rgba(255, 215, 0, 0.25);
+  font-weight: bold;
+}
+
+.interactive_f5eb4b:active .avatar_f9647d{
+  border-image: linear-gradient(0deg, #FFA500, #FFFF00, #FFA500 100%) 1 / 1px 1px 1px 1px !important;
+  box-shadow: 0px 0px 4px 0px rgba(255, 217, 0, 0.5);
+}
+
+/* friend button selected */
+.interactiveSelected_c91bad {
+  background: linear-gradient(90deg, rgba(143, 159, 203, 0.00) 0%, #8F9FCB 23.5%, rgba(143, 159, 203, 0.00) 100%);
+}
+
+.interactiveSelected_c91bad .layout_f9647d .content_f9647d {
+  color: white !important;
+  text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.interactiveSelected_c91bad .avatar_f9647d{
+  border-image: linear-gradient(0deg, #8DA8ED, #8DA8ED, #8DA8ED 100%) 1 / 1px 1px 1px 1px !important;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* friend button selected hover */
+.interactiveSelected_c91bad:hover {
+  background: linear-gradient(90deg, rgba(143, 159, 203, 0.00) 0%, #768FD2 23.5%, rgba(143, 159, 203, 0.00) 100%);
+}
+
+.interactiveSelected_c91bad .layout_f9647d .content_f9647d {
+  color: white !important;
+  text-shadow: none;
+}
+
+.interactiveSelected_c91bad .avatar_f9647d{
+  border-image: linear-gradient(0deg, #8DA8ED, #8DA8ED, #8DA8ED 100%) 1 / 1px 1px 1px 1px !important;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* friend button newmsg */
+
+.interactive_f5eb4b:has(.layout_f9647d.highlighted_f9647d) {
+  background: linear-gradient(90deg, rgba(0, 136, 0, 0.00) 0%, rgba(34, 139, 34, 0.50) 23.5%, rgba(0, 255, 0, 0.00) 100%) !important;
+}
+
+.interactive_f5eb4b:has(.highlighted_f9647d) .layout_f9647d .content_f9647d {
+  color: white !important;
+  text-shadow: 1px 2px 0px rgba(0, 128, 0, 0.25);
+}
+
+.interactive_f5eb4b:has(.highlighted_f9647d) .avatar_f9647d{
+  border-image: linear-gradient(-135deg, #228B22, #00FF00, #228B22 100%) 1 / 1px 1px 1px 1px !important;
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+/* friends category */
+.theme-light .peopleColumn_c2739c {
+  margin: 12px;
+  background: #FFF;
+  border-radius: 4px;
+  box-shadow: 0px 0px 3px 1px #8596CA inset, 0px 0px 0px 1px #8596CA inset;
+}
+
+.theme-light .peopleColumn_c2739c .searchBar_e0840f{
+  order: 1;
+  margin: 0px;
+  height: 100px;
+  border-radius: 0px 0px 3px 3px !important;
+  background: #ECF0F5;
+  box-shadow: 0px 1px 0px 0px #EAEDF8 inset;
+}
+
+.theme-light .peopleColumn_c2739c .inner_c18ec9:before{
+  content: url();
+}
+
+.theme-light .peopleColumn_c2739c .inner_c18ec9 {
+  height: 23px;
+  border: 1px solid #8396C3;
+  background: #FFF;
+  margin: 4px;
+}
+
+.peopleColumn_c2739c .searchBar_e0840f > div .medium_c18ec9.iconLayout_c18ec9{
+  height: 19px !important;
+}
+
+/*  
 friends list
 friend category
 channels list
