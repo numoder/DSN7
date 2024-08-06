@@ -1704,7 +1704,7 @@ rect[fill="#f0b232"], rect[fill="#f23f43"], rect[fill="#23a55a"], rect[height="1
 
 /* FRIENDS LIST */
 .theme-light .content_a4d4d9{
-  background: url(https://numoder.github.io/DSN7/assets/luna/background.png) no-repeat bottom right, linear-gradient(180deg, #F8F8F8 0%, #CDD9EF 30%, #FEFEFE 100%) center repeat !important;
+  background: url(https://numoder.github.io/DSN7/assets/luna/background.png) no-repeat bottom right, linear-gradient(180deg, #D3E0F5 0%, #F6F8FD 35%, #D8E3F6 80%, #C4D4F1 100%) center repeat !important;
   box-shadow: inset 1px 0px 3px 0px #8596CA, inset 1px 0px 0px 0px #8596CA;
 }
 
@@ -1978,7 +1978,7 @@ ul > div[style="height: 84px;"] {
 }
 
 .theme-light .messagesWrapper_e2e187 {
-  background: #FFF;
+  background: #FFFFFFC8;
   border: solid 1px #4F6BA0;
   margin: 40px 8px 16px 8px;
 }
@@ -2011,11 +2011,65 @@ margin-right: 348px;
   visibility: hidden;
 }
 
-.theme-light:not(:has(.videoGrid_bae578)) .upperContainer_fc4f04 .children_fc4f04:has(.avatar_a7d72e) {
-  position: fixed;
+.theme-light .content_a4d4d9 .caret_fc4f04:has([d="M10.99 3.16A1 1 0 1 0 9 2.84L8.15 8H4a1 1 0 0 0 0 2h3.82l-.67 4H3a1 1 0 1 0 0 2h3.82l-.8 4.84a1 1 0 0 0 1.97.32L8.85 16h4.97l-.8 4.84a1 1 0 0 0 1.97.32l.86-5.16H20a1 1 0 1 0 0-2h-3.82l.67-4H21a1 1 0 1 0 0-2h-3.82l.8-4.84a1 1 0 1 0-1.97-.32L15.15 8h-4.97l.8-4.84ZM14.15 14l.67-4H9.85l-.67 4h4.97Z"]) {
+  content: ">";
+}
+
+.theme-light div:not(:has(.peopleColumn_c2739c)) .upperContainer_fc4f04 {
+  flex-direction: column-reverse;
+}
+
+.theme-light div:not(:has(.peopleColumn_c2739c)) .upperContainer_fc4f04 > .toolbar_fc4f04{
+  height: 58px;
+  padding: 0px 2px;
+  margin: 25px 0px 2px 0px;
+}
+
+.theme-light .container_c2739c:has(:not(.peopleColumn_c2739c)) .children_fc4f04{
   overflow: visible;
-  top: 74px !important;
-  margin-left: 32px;
+  text-overflow: ellipsis !important;
+  top: 15px;
+  margin-right: 242px;
+}
+
+.theme-light .children_fc4f04:has(.avatar_a7d72e) {
+  top: 15px;
+  left: 32px;
+}
+
+.theme-light .container_c2739c:has(.peopleColumn_c2739c) .children_fc4f04{
+  top: 0px;
+}
+
+.container_fc4f04{
+  padding: 0px;
+}
+
+.theme-light .themed_fc4f04{
+  background: transparent;
+}
+
+.theme-light .toolbar_fc4f04{
+  background: url(https://numoder.github.io/DSN7/assets/luna/toolbar/smallbar.png);
+  background-repeat: repeat-x;
+}
+
+.theme-light .guildSeparator_d0c57e{
+  height: 8px;
+  width: 32px;
+  background: url(https://numoder.github.io/DSN7/assets/luna/Bump.png);
+  opacity: 0.5;
+}
+
+.theme-light .forumPostTitle_a7d72e::before{
+  content: "> ";
+  color: gray;
+  margin-right: 8px;
+  margin-left: 0px;
+}
+
+.children_fc4f04:after{
+  visibility: hidden;
 }
 
 .theme-light .callContainer_d880dc {
@@ -2094,19 +2148,48 @@ box-shadow: 0px 0px 0px 1px #446097 inset;
 background: linear-gradient(180deg, rgba(214, 224, 242, 0.80) 0%, rgba(255, 255, 255, 0.80) 50%, rgba(214, 224, 242, 0.80) 100%);
 margin-left: -1px;
 margin-right: -1px;
-box-shadow: 0px 0px 0px 1px #446097 inset;
+box-shadow:  inset 0px 0px 0px 1px #446097;
 }
 
-
-
 .theme-light .channelTextArea_a7d72e .inner_d0696b{
-  background: rgba(255, 255, 255, 0.80);
+  background: #FFFFFFC8;
   border-radius: 0px !important;
 }
 
 /* top bar */
-.theme-light .searchBar_f0963d{
+.theme-light .searchBar_f0963d, .theme-light .header_fd6364{
   box-shadow: none;
+  background: url(https://numoder.github.io/DSN7/assets/luna/toolbar/barleft.png), url(https://numoder.github.io/DSN7/assets/luna/toolbar/barmiddle.png);
+  background-repeat: no-repeat, repeat;
+  border-bottom-left-radius: 10px;
+}
+
+.search_a46bef{
+  opacity: 0.2;
+}
+
+.theme-light .toolbar_fc4f04 > .search_ff5f90 {
+  order: 1;
+  height: 58px;
+  background: url(https://numoder.github.io/DSN7/assets/luna/toolbar/barsearchleft.png), url(https://numoder.github.io/DSN7/assets/luna/toolbar/searchbarmiddle.png);
+  background-repeat: no-repeat, repeat-x;
+  background-position: left, center 21px;
+  border-bottom-left-radius: 10px;
+  align-content: center;
+  width: 150px;
+  border-radius: 0px;
+  margin: 0px;
+}
+
+.theme-light .toolbar_fc4f04:has(.search_ff5f90)::after {
+  height: 58px;
+  width: 35px;
+  content: ":";
+  order: 2;
+  color: transparent;
+  background: url(https://numoder.github.io/DSN7/assets/luna/toolbar/searchbarbg.png);
+  background-repeat: no-repeat;
+  background-position: center 21px;
 }
 
 .theme-light .container_fc4f04, .theme-light .searchBar_f0963d, .theme-light .header_fd6364 {
@@ -2152,6 +2235,30 @@ box-shadow: 0px 0px 0px 1px #446097 inset;
   margin-left: 0px;
   max-width: none;
 }
+
+/* user panel */
+.theme-light .panels_a4d4d9{
+  background: transparent;
+}
+
+.theme-light section.panels_a4d4d9 > .container_b2ca13{
+  height: 90px;
+  border-radius: 7px;
+  background: linear-gradient(180deg, #B3C8F1 0%, #F2F2F2 17.5%, #EAF3FE 60%, #BED6F5 100%);
+  box-shadow: 0px 0px 0px 1px #8596CA inset, 0px 0px 1px 2px #FFF inset;
+  margin: 1px 2px;
+  flex-direction: column;
+  padding:2px;
+}
+
+.theme-light .container_b2ca13 > .flex_bba380 {
+  background: linear-gradient(0deg, #FFF 0%, rgba(186, 205, 237, 0.50) 100%);
+  justify-content: space-between !important;
+  width: 100%;
+  border-radius: 6px;
+}
+
+
 
 /* dark mode */
 
