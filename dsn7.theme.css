@@ -1747,7 +1747,7 @@ margin-right: 1px;
   border-radius: 0px;
 }
 
-.theme-light li.channel_c91bad .avatar_f9647d{
+.theme-light li.channel_c91bad .avatar_ec8679{
   border: 1px solid #ADBBD2;
 }
 
@@ -1770,7 +1770,7 @@ margin-right: 1px;
   text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
 }
 
-.theme-light .interactive_f5eb4b:hover .avatar_f9647d{
+.theme-light .interactive_f5eb4b:hover .avatar_ec8679{
   border-image: linear-gradient(-135deg, #FFA500, #FFFF00, #FFA500 100%) 1 / 1px 1px 1px 1px !important;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
@@ -1786,7 +1786,7 @@ margin-right: 1px;
   font-weight: bold;
 }
 
-.theme-light .interactive_f5eb4b:active .avatar_f9647d{
+.theme-light .interactive_f5eb4b:active .avatar_ec8679{
   border-image: linear-gradient(0deg, #FFA500, #FFFF00, #FFA500 100%) 1 / 1px 1px 1px 1px !important;
   box-shadow: 0px 0px 4px 0px rgba(255, 217, 0, 0.5);
 }
@@ -1802,7 +1802,7 @@ margin-right: 1px;
   text-shadow: 1px 2px 0px rgba(0, 0, 0, 0.25);
 }
 
-.theme-light .interactiveSelected_c91bad .avatar_f9647d{
+.theme-light .interactiveSelected_c91bad .avatar_ec8679{
   border-image: linear-gradient(0deg, #8DA8ED, #8DA8ED, #8DA8ED 100%) 1 / 1px 1px 1px 1px !important;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
 }
@@ -1817,7 +1817,7 @@ margin-right: 1px;
   text-shadow: none;
 }
 
-.theme-light .interactiveSelected_c91bad .avatar_f9647d{
+.theme-light .interactiveSelected_c91bad .avatar_ec8679{
   border-image: linear-gradient(0deg, #8DA8ED, #8DA8ED, #8DA8ED 100%) 1 / 1px 1px 1px 1px !important;
   box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
 }
@@ -1833,7 +1833,7 @@ margin-right: 1px;
   text-shadow: 1px 2px 0px rgba(0, 128, 0, 0.25);
 }
 
-.theme-light .interactive_f5eb4b:has(.highlighted_f9647d) .avatar_f9647d{
+.theme-light .interactive_f5eb4b:has(.highlighted_f9647d) .avatar_ec8679{
   border-image: linear-gradient(-135deg, #228B22, #00FF00, #228B22 100%) 1 / 1px 1px 1px 1px !important;
   box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.5);
 }
@@ -2030,8 +2030,22 @@ margin-right: 348px;
 
 .theme-light div:not(:has(.peopleColumn_c2739c)) .upperContainer_fc4f04 > .toolbar_fc4f04{
   height: 58px;
-  padding: 0px 2px;
-  margin: 25px 0px 2px 0px;
+    margin: 25px 0px 2px 0px;
+}
+
+.theme-light .toolbar_fc4f04 > div:not(.search_ff5f90),
+.theme-light .toolbar_fc4f04 > a {
+  height: 58px;
+  width: 40px;
+  margin: 0px;
+  align-content: center;
+  background: url(https://numoder.github.io/DSN7/assets/luna/toolbar/barmiddle.png);
+}
+
+.theme-light .toolbar_fc4f04 > div:not(.search_ff5f90) > svg,
+.theme-light .toolbar_fc4f04 > a > svg{
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .theme-light .container_c2739c:has(:not(.peopleColumn_c2739c)) .children_fc4f04{
@@ -2039,6 +2053,11 @@ margin-right: 348px;
   text-overflow: ellipsis !important;
   top: 15px;
   margin-right: 242px;
+}
+
+.theme-light .children_fc4f04{
+  top: 14px;
+  left: 8px;
 }
 
 .theme-light .children_fc4f04:has(.avatar_a7d72e) {
@@ -2097,6 +2116,8 @@ margin-right: 348px;
   width: 100%;
   height: 58px;
   content: "g";
+  margin-left: -5px;
+  padding-right: 6px;
   color: transparent;
   background: linear-gradient(180deg, #EEF3FA 25%, #B0C2E5 50%, #EEF3FA 75.5%);
   box-shadow: 0px 0px 4px 2px #AEBBD4 inset, 0px 0px 0px 1px #AEBBD4 inset;
