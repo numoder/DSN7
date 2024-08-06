@@ -1658,41 +1658,50 @@ rect[fill="#f0b232"], rect[fill="#f23f43"], rect[fill="#23a55a"], rect[height="1
   fill: transparent !important;
 }
 
-.avatar_e9f61e:has(rect)::after{
+.avatar_f3939d:has(rect)::after{
+  top: 24px !important;
+  left: 25px;
+  position: relative;
+  z-index: 4;
+}
+
+.avatar_d808b0:has(rect)::after,
+.avatar_ec8679:has(rect)::after{
   top: 12px !important;
   left: 2px;
   position: relative;
   z-index: 4;
 }
 
-.avatar_f9647d:has(rect)::after{
-  top: 12px !important;
-  left: 2px;
-  position: relative;
-  z-index: 4;
-
-}
-
-.avatar_f9647d:has(rect[fill="#23a55a"])::after,
-.avatar_e9f61e:has(rect[fill="#23a55a"])::after {
+.avatar_f3939d:has(rect[fill="#23a55a"][width="10"])::after,
+.avatar_d808b0:has(rect[fill="#23a55a"][width="10"])::after,
+.avatar_ec8679:has(rect[fill="#23a55a"][width="10"])::after {
   content: url(https://numoder.github.io/DSN7/assets/icons/status/online.svg) !important;
   width: 10px !important;
   height: 10px !important;
 }
 
-.avatar_f9647d:has(rect[fill="#f0b232"])::after,
-.avatar_e9f61e:has(rect[fill="#f0b232"])::after {
+.avatar_f3939d:has(rect[fill="#f0b232"])::after,
+.avatar_d808b0:has(rect[fill="#f0b232"])::after,
+.avatar_ec8679:has(rect[fill="#f0b232"])::after {
   content: url(https://numoder.github.io/DSN7/assets/icons/status/idle.svg) !important;
 }
 
-.avatar_f9647d:has(rect[fill="#f23f43"])::after,
-.avatar_e9f61e:has(rect[fill="#f23f43"])::after{
+.avatar_f3939d:has(rect[fill="#f23f43"])::after,
+.avatar_d808b0:has(rect[fill="#f23f43"])::after,
+.avatar_ec8679:has(rect[fill="#f23f43"])::after{
   content: url(https://numoder.github.io/DSN7/assets/icons/status/dnd.svg) !important;
 }
 
-.avatar_e9f61e:has(rect[height="15"][fill="#23a55a"])::after{
+.avatar_f3939d:has(rect[height="15"][fill="#23a55a"])::after{
+  content: url(https://numoder.github.io/DSN7/assets/icons/status/phone.svg) !important;
+}
+
+.avatar_d808b0:has(rect[height="15"][fill="#23a55a"])::after,
+.avatar_ec8679:has(rect[height="15"][fill="#23a55a"])::after {
   content: url(https://numoder.github.io/DSN7/assets/icons/status/phone.svg) !important;
   left: 6px;
+  top: 10px !important;
 }
 
 /* MSN STUFF NOW */
@@ -2164,9 +2173,6 @@ box-shadow:  inset 0px 0px 0px 1px #446097;
   border-bottom-left-radius: 10px;
 }
 
-.search_a46bef{
-  opacity: 0.2;
-}
 
 .theme-light .toolbar_fc4f04 > .search_ff5f90 {
   order: 1;
@@ -2176,9 +2182,11 @@ box-shadow:  inset 0px 0px 0px 1px #446097;
   background-position: left, center 21px;
   border-bottom-left-radius: 10px;
   align-content: center;
-  width: 150px;
+  width: 190px;
   border-radius: 0px;
   margin: 0px;
+  padding-top: 9px;
+  padding-left: 48px;
 }
 
 .theme-light .toolbar_fc4f04:has(.search_ff5f90)::after {
@@ -2241,6 +2249,10 @@ box-shadow:  inset 0px 0px 0px 1px #446097;
   background: transparent;
 }
 
+.theme-light section.panels_a4d4d9 > div {
+  justify-content: space-between;
+}
+
 .theme-light section.panels_a4d4d9 > .container_b2ca13{
   height: 90px;
   border-radius: 7px;
@@ -2251,13 +2263,32 @@ box-shadow:  inset 0px 0px 0px 1px #446097;
   padding:2px;
 }
 
-.theme-light .container_b2ca13 > .flex_bba380 {
+.theme-light .container_b2ca13 > .flex_dc333f {
   background: linear-gradient(0deg, #FFF 0%, rgba(186, 205, 237, 0.50) 100%);
   justify-content: space-between !important;
   width: 100%;
   border-radius: 6px;
 }
 
+.theme-light .container_b2ca13 > .avatarWrapper_b2ca13{
+  position: relative;
+}
+
+
+.theme-light .container_b2ca13 .avatarWrapper_b2ca13,
+.theme-light .container_b2ca13 .wrapper_c51b4e.avatar_b2ca13 {
+  height: 50px !important;
+  padding-right: auto;
+  margin-right: auto;
+}
+
+.theme-light .container_b2ca13 > .avatarWrapper_b2ca13 .wrapper_c51b4e.avatar_b2ca13{
+  border-radius: 9px;
+box-shadow: 0px 0px 0px 1px #4E6BA0 inset;
+width: 50px !important;
+top: 14px;
+margin-left: 6px;
+}
 
 
 /* dark mode */
