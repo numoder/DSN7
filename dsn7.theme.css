@@ -1295,21 +1295,39 @@ visibility: hidden;
   background-position: bottom, center;
 }
 
-.presets_f45ea6 > .themeSelectionContainer_cb7c27:first-child > div.themeSelection_cb7c27 {
-  background-image: url(https://numoder.github.io/DSN7/assets/wallpaper/340.jpg);
+.themeSelection_cb7c27{
+  z-index: 2 !important;
 }
 
-.presets_f45ea6 > .themeSelectionContainer_cb7c27:nth-child(2) > div.themeSelection_cb7c27 {
-  background-image: url(https://numoder.github.io/DSN7/assets/wallpaper/341.jpg);
+.themeSelectionContainer_cb7c27{
+  z-index: 3 !important;
 }
 
-.presets_f45ea6 > .themeSelectionContainer_cb7c27:nth-child(3) > div.themeSelection_cb7c27 {
-  background-image: url(https://numoder.github.io/DSN7/assets/wallpaper/342.jpg);
+.themeSelection_cb7c27[aria-label="Mint Apple"]{
+  opacity: 0;
 }
 
-.presets_f45ea6 > .themeSelectionContainer_cb7c27:nth-child(4) > div.themeSelection_cb7c27 {
+.themeSelectionContainer_cb7c27:has(div[aria-label="Mint Apple"]) {
   background-image: url(https://numoder.github.io/DSN7/assets/wallpaper/343.jpg);
+  background-size: cover;
+  z-index: 999 !important;
 }
+
+.theme-light.custom-theme-background .nowPlayingColumn_c2739c > .container_bf550a{
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.00) 0%, rgba(255, 255, 255, 0.20) 75%, #D9D9D9 100%);
+  }
+  
+  .theme-light.custom-theme-background .sidebar_a4d4d9{
+    background: rgba(255, 255, 255, 0.5);
+  }
+
+
+.theme-light.custom-theme-background .content_a4d4d9{
+  background: url(https://numoder.github.io/DSN7/assets/wallpaper/343.jpg) !important;
+  background-size: cover !important;
+  image-rendering: pixelated;
+}
+
 
 .theme-light .gridContainer_ad0b71{
   border-radius: 0px 12px 12px 0px;
@@ -2043,7 +2061,7 @@ ul > div[style="height: 84px;"] {
 }
 
 .theme-light .messagesWrapper_e2e187 {
-  background: #FFFFFFC8;
+  background: rgba(255, 255, 255, 0.85);
   border: solid 1px #4F6BA0;
   margin: 40px 8px 16px 8px;
 }
@@ -2056,7 +2074,7 @@ ul > div[style="height: 84px;"] {
   margin-right: 24px;
   margin: 15px 8px;
   border-radius: 8px 8px 0px 0px;
-  background: rgba(219, 231, 249, 0.50);
+  background: rgba(219, 231, 249, 1);
   box-shadow: 0px 0px 0px 1px #4F6BA0 inset;
 }
 
